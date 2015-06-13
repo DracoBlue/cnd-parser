@@ -2,6 +2,7 @@
   "name": "cnd-parser",
   "description": "A parser for JCR's CND files.",
   "main": "src/index.js",
+  "keywords": ["cnd", "jsr-170", "jcr"],
   "scripts": {
     "test": "node_modules/mocha/bin/mocha"
   },
