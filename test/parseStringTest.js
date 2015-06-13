@@ -6,7 +6,6 @@ describe('Parse Test File', function(){
 
     it('works with small testfile', function(done){
        var cnd = cndParser.parseString(fs.readFileSync(__dirname + '/smallFile.cnd').toString());
-        console.log(JSON.stringify(cnd.getNodeTypes(), null, 4));
 
         assert.equal(cnd.getNodeTypes().length, 2);
 
