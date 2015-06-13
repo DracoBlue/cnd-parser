@@ -1,0 +1,10 @@
+<ns = 'http://namespace.com/ns'>
+[ns:NodeType] > ns:ParentType1, ns:ParentType2
+  orderable mixin
+  - ex:property (string) primary mandatory autocreated protected multiple version
+  + ns:node (ns:reqType1, ns:reqType2) mandatory autocreated protected multiple version
+[nt:resource] > mix:referenceable
+  - jcr:encoding
+  - jcr:mimeType mandatory
+  - jcr:data (binary) mandatory
+  - jcr:lastModified (date) mandatory ignore

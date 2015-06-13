@@ -1,0 +1,25 @@
+{
+  "name": "cnd-parser",
+  "description": "A parser for JCR's CND files.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DracoBlue/cnd-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DracoBlue/cnd-parser/issues"
+  },
+  "engines": {
+    "node": "0.12.x"
+  },
+  "homepage": "https://github.com/DracoBlue/cnd-parser",
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "json": "*"
+  },
+  "author": "DracoBlue <JanS@DracoBlue.de>",
+  "license": "MIT"
+}

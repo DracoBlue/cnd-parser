@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - '0.10'
+  - '0.11'
+  - '0.12'
+before_deploy:
+  - node_modules/.bin/json -E "this.version='$TRAVIS_TAG'" -f package.json -I
+deploy:
+  provider: npm
+  email: JanS@DracoBlue.de
+  api_key:
+    secure: QtHesfMCqvwzlbGefkCGLvixdfZfh3SEz7unyzNbfexFJ7Ofhr/ExrWB1+BVtRnPztQF/sYInHKMjfThFpqaH6BAW2TMu347QHGadWgpcptwHtbZv/nrkYDl3x02kvK+QsoZGDIRENZ7N+Zx3ublgBGQ22Cdw03w5a+vkPPSLvk=
+  on:
+    tags: true
+    repo: DracoBlue/cnd-parser
+    branch: master
+    node: 0.12
